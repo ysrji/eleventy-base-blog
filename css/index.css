@@ -17,9 +17,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, system-ui, sans-serif;
-  color: var(--darkgray);
-  background-color: var(--white);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--white);
+  background-color: var(--darkgray);
 }
 p:last-child {
   margin-bottom: 0;
@@ -140,13 +140,16 @@ code {
 .nav-item {
   display: inline-block;
   margin-right: 1em;
+  color: var(--white);
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
+  color: var(--white);
 }
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
+  color: var(--lightgray);
 }
 
 /* Posts list */
@@ -223,7 +226,7 @@ a[href].post-tag:focus {
 
 /* Warning */
 .warning {
-  background-color: #ffc;
+  background-color: orangered;
   padding: 1em 0.625em; /* 16px 10px /16 */
 }
 .warning ol:only-child {
@@ -245,5 +248,5 @@ a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
-  color: #aaa;
+  color: var(--lightgray)
 }
