@@ -1,10 +1,11 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: 关于睿极
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About Me
-  order: 3
+  key: About
+  order: 4
+  title: 关于睿极
 ---
 
-I am a person that writes stuff.
+关于睿极
