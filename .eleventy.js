@@ -63,6 +63,9 @@ module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/normalize.css/normalize.css' : 'css/normalize.css'
+  });
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
