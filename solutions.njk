@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-key: Solutions
-order: 1
-title: 解决方案
+  key: Solutions
+  order: 1
+  title: 解决方案
 ---
 <article class="solutions">
   <article class="solution" style='
@@ -56,9 +56,9 @@ title: 解决方案
         align-items: center;
         justify-content: center;
       ">
-<h2>
-  行业痛点
-</h2>
+      <h2>
+        行业痛点
+      </h2>
     </div>
 
     <div style="
@@ -103,38 +103,124 @@ title: 解决方案
 
 
   </article>
-  <article class="solution">
-    <section style="grid-column: 3;">
+  <article class="solution trend" style="
+    display: grid;
+    gap: 5em;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr 1fr;
+    background-color: black;
+    color: white;
+  ">
+    <div style="
+    display: flex;
+    justify-content: space-around;
+grid-column: 1 / 5;
+grid-row: 1;
+">
       <h2>发展趋势</h2>
-      <h3>从“零散管理”到“全生命周期管理” </h3>
-      <p>从原有的设备“散养”模式，到“集中”联网统一管理，提供从设备出厂、安装、生产、维护、报废的全生命周期管理，实时掌握设备情况。 </p>
-      <h3>从“事后维护”到“智能预警”</h3>
-      <p>针对设备部件损耗、运行异常、工作故障，依托设备数据，建立智能预警模型，从事后到事前，及时预警、提前维护。</p>
-      <h3>从“现场维修”到“远程运维”</h3>
-      <p>从原有设备出现问题派遣人员赶赴现场维护，到远程实时查看设备故障信息，控制设备，调整参数，以及利用智能眼镜等可视化装备进行远程协</p>
-      <h3>从“出厂固化”到“持续迭代”</h3>
-      <p>从原有的设备出厂功能、算法固化，到持续迭代升级设备的功能、算法，始终保持产品的竞争力。</p>
-    </section>
+    </div>
+
+    <div style="grid-row: 2 / 3;grid-column: 2 / 3;">
+      <div>
+        <h3>从“零散管理”到“全生命周期管理” </h3>
+        <p>从原有的设备“散养”模式，到“集中”联网统一管理，提供从设备出厂、安装、生产、维护、报废的全生命周期管理，实时掌握设备情况。 </p>
+      </div>
+    </div>
+    <div style="grid-row: 2 / 3;grid-column: 3 / 4;">
+      <div>
+        <h3>从“事后维护”到“智能预警”</h3>
+        <p>针对设备部件损耗、运行异常、工作故障，依托设备数据，建立智能预警模型，从事后到事前，及时预警、提前维护。</p>
+      </div>
+    </div>
+    <div style="grid-row: 3 / 4;grid-column: 2 / 3;">
+      <div>
+        <h3>从“现场维修”到“远程运维”</h3>
+        <p>从原有设备出现问题派遣人员赶赴现场维护，到远程实时查看设备故障信息，控制设备，调整参数，以及利用智能眼镜等可视化装备进行远程协</p>
+      </div>
+    </div>
+    <div style="grid-row: 3 / 4;grid-column: 3 / 4;">
+      <div>
+        <h3>从“出厂固化”到“持续迭代”</h3>
+        <p>从原有的设备出厂功能、算法固化，到持续迭代升级设备的功能、算法，始终保持产品的竞争力。</p>
+      </div>
+    </div>
   </article>
-  <article class="solution">
-    <section style="grid-column: 3;">
-      <h2>A Good Boy</h2>
-      <h3>Really really good</h3>
-      <a href="/"><button>Smoosh the good boy</button></a>
+  <article class="solution sol-brief" style="
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  background-color: var(--darkgray);
+  ">
+    <!--
+      5G
+        人工智能
+  大数据
+    物联网
+    -->
+    <section style="
+      padding: 5vmin;
+      grid-column: 1 / 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    ">
+      <h2>方案简介</h2>
+      <div style="
+      display: grid;
+      ">
+        <div style="grid-column: 1 / 2;">
+          <h3>核心</h3>
+          <h4>睿极智造 工业互联平台</h4>
+        </div>
+        <div style="grid-column: 2 / 3;">
+          <h3>技术</h3>
+          <h4>5G+人工智能+ 大数据+物联网</h4>
+        </div>
+      </div>
+      <p>
+        为满足工业用户生产制造信息化、数字化和智能化的转型升级需求，睿极智能推出专业的数据私有化工业互联网解决方案。本方案基于睿极智能自主研发的“睿极智造工业互联平台”，以工业互联网平台为核心，利用“5G+人工智能+大数据+物联网”技术，通过多种网络设备，完成数据联网、接入和分析，实现各系统之间数据互通共享，提供设备管理、状态感知、数据统计、智能分析、故障预测、报警推送、远程管理、智能运维、远程协助和局部安全防护等功能服务。
+      </p>
     </section>
+    <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" style="
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    ">
   </article>
-  <article class="solution">
-    <section style="grid-column: 3;">
-      <h2>A Good Boy</h2>
-      <h3>Really really good</h3>
-      <a href="/"><button>Smoosh the good boy</button></a>
+  <article class="solution sol-highlights" style="
+  display: flex;
+  align-items: center
+  ;">
+    <h2>亮点与特色</h2>
+    <section>
+      <h3>广泛安全的设备接入</h3>
+      <p>具备海量的设备接入和海量数据的并发交互能力，设备支持直连和网关接入等多种接入方式。 对设备采集的数据进行抽象建模，形成“物模型”，做到协议标准化和数据结构化。
+        设备信令交互和数据传输均采用动态密钥私有加密算法，确保全链路数据可靠、可信、安全。</p>
     </section>
-  </article>
-  <article class="solution">
-    <section style="grid-column: 3;">
-      <h2>A Good Boy</h2>
-      <h3>Really really good</h3>
-      <a href="/"><button>Smoosh the good boy</button></a>
+    <section>
+      <h3>设备全生命周期管理</h3>
+      <p>
+        可实现设备的全生命周期管理，覆盖设备的添加、激活、删除、状态、位置定位、运行数据、产量数据、远程控制等各环节。还可对接企业CRM、ERP系统，关联设备的客户信息、维护维修记录等。基于设备采集的数据，可实时进行设备状态监测、健康状态分析、故障异常推送、历史数据追溯等。
+      </p>
+    </section>
+    <section>
+      <h3>图像数据采集回传分析</h3>
+      <p>依托睿极智能视频图像的传输和处理能力，网关可将工业相机采集的视频图像实时传输至后台处理，并进行算法训练，持续提升算法的效果，更新后的算法可通过OTA的方式对设备进行远程升级。从而不断提升产品的视觉分析效果和市场竞争力。
+      </p>
+    </section>
+    <section>
+      <h3>可视化远程运维协作</h3>
+      <p>依托海量设备数据的积累，建立预测分析模型来预测设备的异常、故障、损耗情况，达到提前预知、提前维护、减少设备故障、提高设备使用寿命。设备出现问题时，可通过远程诊断、远程双向音视频协助等方式，分析并解决故障。</p>
+    </section>
+    <section>
+      <h3>局部安全防护</h3>
+      <p>依托睿极智能视频图像的传输和处理能力，网关可将工业相机采集的视频图像实时传输至后台处理，并进行算法训练，持续提升算法的效果，更新后的算法可通过OTA的方式对设备进行远程升级。从而不断提升产品的视觉分析效果和市场竞争力。
+      </p>
+    </section>
+    <section>
+      <h3>纯私有化部署</h3>
+      <p>考虑到客户在企业性质、机房资源分配和数据业务方面的便利性、安全性与合规性的不同需求，系统支持公有云、私有云、企业自建服务器、公私混合等多种部署方式，架构灵活，数据可控。</p>
     </section>
   </article>
 </article>

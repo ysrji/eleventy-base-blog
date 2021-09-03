@@ -66,3 +66,37 @@ header {
   background-color: hsla(0, 0%, 0%, .5);
   border-radius: .5em;
 }
+
+.solution, .trend p {
+  color: gray;
+}
+
+.solution, .trend > div > div {
+  background-color: var(--darkgray);
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+}
+
+.solution, .sol-highlights {
+  background-color: black;
+  color: white;
+}
+
+.solution, .sol-highlights > section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.solution, .sol-highlights > h2 {
+  margin: 10vw;
+}
+
+.solution, .sol-highlights > section > h3 {
+  margin: 5vw;
+  grid-column: 1 / 2;
+}
+.solution, .sol-highlights > section > p {
+  margin: 5vw;
+  grid-column: 2 / 3;
+}
