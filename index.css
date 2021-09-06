@@ -21,6 +21,22 @@ body {
   background-color: var(--darkgray);
 }
 
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: large;
+}
+
+h4 {
+  font-size: medium;
+}
+
 header {
   font-size: x-large;
   display: flex;
@@ -76,7 +92,7 @@ header {
 }
 
 .solution, .trend > div > div {
-  background-color: var(--darkgray);
+  /* background-color: var(--darkgray); */
         padding: 1em;
         display: flex;
         flex-direction: column;
@@ -111,7 +127,7 @@ footer {
   height: auto;
   display: grid;
   justify-items: center;
-  grid-gap: 2vw;
+  gap: 2vw;
   grid-template-columns: 1fr 0.9fr 0.4fr;
   grid-template-rows: minmax(12rem, max-content);
 }
@@ -123,12 +139,13 @@ footer img {
 footer > section:nth-of-type(1) {
   grid-column: 1 / span 1;
   display: grid;
-  grid-template-rows: repeat(3 1fr);
+  grid-template-rows: repeat(3 minmax(3rem, 10vh));
 }
 
 footer > section:nth-of-type(2) {
   grid-column: 2 / span 1;
   display: grid;
+  gap: 2vw;
   grid-template-columns: 1fr 2.5fr;
 }
 
