@@ -3,14 +3,18 @@
   "version": "5.0.2",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
-    "build": "eleventy",
     "clean": "rimraf ./_site/",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
-    "start": "npm run clean && concurrently --kill-others \"npm:watch-styles\" \"npm:watch-11ty\"",
-    "watch-styles": "TAILWIND_MODE=watch postcss css/index.css -o css/output.css --config ./postcss.config.js -w",
-    "watch-11ty": "ELEVENTY_ENV=development npx @11ty/eleventy --serve --quiet --incremental",
-    "debug": "DEBUG=* eleventy"
+    "start": "npm run dev",
+    "dev": "npm run clean && concurrently --kill-others \"npm:dev:styles\" \"npm:dev:11ty\"",
+    "dev:styles": "TAILWIND_MODE=watch postcss css/index.css -o css/output.css --config ./postcss.config.js -w",
+    "dev:11ty": "ELEVENTY_ENV=development eleventy --serve --quiet --incremental",
+    "build": "npm run clean && npm run prod:styles && npm run prod:build",
+    "prod:styles": "NODE_ENV=production postcss css/index.css -o css/output.css --config ./postcss.config.js",
+    "prod:build": "ELEVENTY_ENV=production eleventy",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "dry-run": "DEBUG=Eleventy* eleventy --dryrun"
   },
   "repository": {
     "type": "git",
