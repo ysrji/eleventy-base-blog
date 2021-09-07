@@ -8,80 +8,38 @@ eleventyNavigation:
 <article class="solutions">
   <article class="solution sol-bg">
     <img class="hero-left" src="/img/06_02_2014_manul_Pallass-cat_1.jpg"></img>
-    <section style="
-      display: flex;
-      flex-direction: column;
-      grid-column: 3 / 4;
-      grid-row: 2 / 3;
-    ">
-      <h2 style="
-        font-size: 3rem;
-      ">方案背景</h2>
-      <h3 style="
-        font-size: 2rem;
-        color: cornflowerblue;">提升产业链现代化水平</h3>
-      <p style="color: gray;">
+    <section>
+      <h2>方案背景</h2>
+      <h3>提升产业链现代化水平</h3>
+      <p>
         {{ "作为新一代信息通信技术与工业经济深度融合产物，工业互联网集关键基础设施、全新产业生态和新型应用模式于一身，对促进互联网与实体经济融合，支撑制造强国和网络强国建设，提升产业链现代化水平，推动经济高质量发展和构建新发展格局具有重要意义。工业互联网已连续四年被写入政府工作报告，工业和信息化部也印发《工业互联网创新发展行动计划（2021-2023年）》，支持工业互联网发展。" | safe }}
       </p>
     </section>
   </article>
-  <article class="solution" style='
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 3fr 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1.5fr 2.5fr;
-    background-color: white;
-    color: black;
-    /* background-image: url("/img/06_02_2014_manul_Pallass-cat_1.jpg");
-    background-size: contain;
-    background-clip: border-box; */
-    '>
-    <div style="
-        grid-column: 4 / 5;
-        grid-row: 1 / 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      ">
+  <article class="solution sol-pp">
+    <div>
       <h2>
         行业痛点
       </h2>
     </div>
 
-    <div style="
-      grid-column: 2 / 4;
-      grid-row: 2 / 3;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      ">
+    <div>
       <h3>设备难管理</h3>
       <p>企业无法实时掌握设备的分布、运行情况、生产数据等信息，缺乏健全的设备全生命周期管理档案，维护信息碎片化，断序严重</p>
     </div>
 
-    <div style="
-      grid-column: 2 / 4;
-      grid-row: 3 / 4;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      ">
+    <div>
       <h3>
         运维周期长
       </h3>
       <p>设备遍布各地，无法及时诊断设备故障原因，响应不及时；运维和技术人员亲自到现场检修费时费力，修复效率低，售后成本高</p>
     </div>
-    <div style="
-      grid-column: 5 / 7;
-      grid-row: 2 / 3;
-      ">
+    <div>
       <h3>设备多样化</h3>
       <p>工业上存在众多设备，厂家林立，每种设备都有不同的设备通讯协议，数据形式千差万别，仅靠企业自身很难实现互通，且数据安全得不到保障</p>
     </div>
 
-    <div style="
-      grid-column: 5 / 7;
-      grid-row: 3 / 4;
-      ">
+    <div
       <h3>数据缺反馈</h3>
       <p>企业对实时生产数据得不到反馈，缺乏对设备故障、效率的分析，没有可靠的数据依据；设备厂家担心维修宝贵经验流失；产品研发得不到实际设备运行数据反馈，无法有针对性的进行技术改进，进而提升产品竞争力
       </p>
@@ -89,76 +47,51 @@ eleventyNavigation:
 
 
   </article>
-  <article class="solution trend" style="
-    display: grid;
-    gap: 5em;
-    grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: 2fr 3fr 3fr 1fr;
-    background-color: black;
-    color: white;
-  ">
-    <div style="
-    display: flex;
-    justify-content: space-around;
-grid-column: 1 / 5;
-grid-row: 1;
-">
+  <article class="solution trend">
+    <div>
       <h2>发展趋势</h2>
     </div>
 
-    <div style="grid-row: 2 / 3;grid-column: 2 / 3;">
+    <div>
       <div>
         <h3>从“零散管理”到“全生命周期管理” </h3>
         <p>从原有的设备“散养”模式，到“集中”联网统一管理，提供从设备出厂、安装、生产、维护、报废的全生命周期管理，实时掌握设备情况。 </p>
       </div>
     </div>
-    <div style="grid-row: 2 / 3;grid-column: 3 / 4;">
+    <div>
       <div>
         <h3>从“事后维护”到“智能预警”</h3>
         <p>针对设备部件损耗、运行异常、工作故障，依托设备数据，建立智能预警模型，从事后到事前，及时预警、提前维护。</p>
       </div>
     </div>
-    <div style="grid-row: 3 / 4;grid-column: 2 / 3;">
+    <div>
       <div>
         <h3>从“现场维修”到“远程运维”</h3>
         <p>从原有设备出现问题派遣人员赶赴现场维护，到远程实时查看设备故障信息，控制设备，调整参数，以及利用智能眼镜等可视化装备进行远程协</p>
       </div>
     </div>
-    <div style="grid-row: 3 / 4;grid-column: 3 / 4;">
+    <div>
       <div>
         <h3>从“出厂固化”到“持续迭代”</h3>
         <p>从原有的设备出厂功能、算法固化，到持续迭代升级设备的功能、算法，始终保持产品的竞争力。</p>
       </div>
     </div>
   </article>
-  <article class="solution sol-brief" style="
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: white;
-  background-color: var(--darkgray);
-  ">
+  <article class="solution sol-brief">
     <!--
       5G
         人工智能
   大数据
     物联网
     -->
-    <section style="
-      padding: 5vmin;
-      grid-column: 1 / 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    ">
+    <section>
       <h2>方案简介</h2>
-      <div style="
-      display: grid;
-      ">
-        <div style="grid-column: 1 / 2;">
+      <div>
+        <div>
           <h3>核心</h3>
           <h4>睿极智造 工业互联平台</h4>
         </div>
-        <div style="grid-column: 2 / 3;">
+        <div>
           <h3>技术</h3>
           <h4>5G+人工智能+ 大数据+物联网</h4>
         </div>
@@ -167,17 +100,9 @@ grid-row: 1;
         为满足工业用户生产制造信息化、数字化和智能化的转型升级需求，睿极智能推出专业的数据私有化工业互联网解决方案。本方案基于睿极智能自主研发的“睿极智造工业互联平台”，以工业互联网平台为核心，利用“5G+人工智能+大数据+物联网”技术，通过多种网络设备，完成数据联网、接入和分析，实现各系统之间数据互通共享，提供设备管理、状态感知、数据统计、智能分析、故障预测、报警推送、远程管理、智能运维、远程协助和局部安全防护等功能服务。
       </p>
     </section>
-    <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" style="
-    grid-column: 2 / 3;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    ">
+    <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg">
   </article>
-  <article class="solution sol-highlights" style="
-  display: flex;
-  align-items: center
-  ;">
+  <article class="solution sol-highlights">
     <h2>亮点与特色</h2>
     <section>
       <h3>广泛安全的设备接入</h3>
