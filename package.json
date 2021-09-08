@@ -14,7 +14,8 @@
     "prod:styles": "NODE_ENV=production postcss index.css -o css/output.css --config ./postcss.config.js",
     "prod:build": "ELEVENTY_ENV=production eleventy",
     "debug": "DEBUG=Eleventy* eleventy",
-    "dry-run": "DEBUG=Eleventy* eleventy --dryrun"
+    "dry-run": "DEBUG=Eleventy* eleventy --dryrun",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,8 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
     "autoprefixer": "^10.3.4",
     "concurrently": "^6.2.1",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "luxon": "^1.26.0",
     "markdown-it": "^12.1.0",
     "markdown-it-anchor": "^8.1.2",
@@ -48,5 +51,8 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
