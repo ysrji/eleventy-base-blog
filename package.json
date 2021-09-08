@@ -53,6 +53,6 @@
     "normalize.css": "^8.0.1"
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,md,yaml,yml,json}": "prettier --write"
   }
 }
