@@ -1,12 +1,52 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-index
+templateClass: index
 ---
+<section class="hero">
+  <h1>专业的数据私有化工业互联网平台提供商</h1>
+  <p>基于睿极智能自主研发的“睿极智造工业互联平台”，以工业互联网平台为核心，利用“5G+人工智能+大数据+物联网”技术， 通过多种网络设备，完成数据联网、接入和分析，实现各系统之间数据互通共享，
+    提供设备管理、状态感知、数据统计、智能分析、故障预测、报警推送、远程管理、智能运维、远程协助和局部安全防护等功能服务。</p>
+  <button>了解更多</button>
+</section>
+<section class="carousel"></section>
+<section class="brief">
+  <h2>方案简介</h2>
+  <p>为满足用户生产制造信息化、工业化和智能化升级需求，睿极智能将提供专业的数据私有化工业互联网平台方案。 本方案基于睿极智能自主研发的“睿极智造工业互联平台”，以工业互联网平台为核心，利用“5G+人工智能+大数据+物联网”技术，
+    通过多种网络设备，完成数据联网、接入和分析，实现各系统之间数据互通共享， 提供设备管理、状态感知、数据统计、智能分析、故障预测、报警推送、远程管理、智能运维、远程协助和局部安全防护等功能服务。</p>
+  {% set features = collections.features %}
+  <div class="grid">
+    <figure>
+      <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="5G">
+      <figcaption>5G</figcaption>
+    </figure>
+    <figure>
+      <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="人工智能">
+      <figcaption>人工智能</figcaption>
+    </figure>
+    <figure>
+      <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="大数据">
+      <figcaption>大数据</figcaption>
+    </figure>
+    <figure>
+      <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="物联网">
+      <figcaption>物联网</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="highlights"></section>
+<section class="products"></section>
+<section class="about">
+  <h3>睿极智能</h3>
+  <h5>睿极智能成立于2015年8月，是专业的视频物联网解决方案提供商，以视频为核心，以技术创新为持续驱动，为全球提供无线数据通信软硬件一体化解决方案。
+  </h5>
+  <button>了解更多</button>
+</section>
+
 {% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+<!-- <h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1> -->
 
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+<!-- {% include "postslist.njk" %} -->
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<!-- <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p> -->

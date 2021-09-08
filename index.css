@@ -16,30 +16,39 @@
 html,
 body {
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "SourceHanSansCN", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
   color: var(--white);
   background-color: var(--darkgray);
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: 70px;
 }
 
 h2 {
-  font-size: x-large;
+  font-size: 60px;
 }
 
 h3 {
-  font-size: large;
+  font-size: 46px;
 }
 
 h4 {
-  font-size: medium;
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6,
+p {
+  font-size: 18px;
 }
 
 header {
-  font-size: x-large;
   display: flex;
   color: white;
   align-items: center;
@@ -75,7 +84,6 @@ header {
   color: var(--white);
 }
 .nav-item-active {
-  font-weight: 700;
   text-decoration: underline;
   color: var(--lightgray);
 }
@@ -315,4 +323,13 @@ footer > section:nth-of-type(3) {
 footer > section:nth-of-type(3) > div:nth-of-type(2) {
   display: flex;
   justify-content: space-around;
+}
+
+.index > .brief > .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.index > .brief > .grid > figure > img {
+  width: 100%;
 }
