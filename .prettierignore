@@ -1,0 +1,6 @@
+.envrc
+README.md
+_site/
+css/output.css
+node_modules/
+package-lock.json
