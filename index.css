@@ -13,39 +13,41 @@
 }
 
 /* Global stylesheet */
-html,
-body {
-  padding: 0;
-  font-family: "SourceHanSansCN", "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 400;
-  color: var(--white);
-  background-color: var(--darkgray);
-}
+@layer base {
+  html,
+  body {
+    padding: 0;
+    font-family: "SourceHanSansCN", "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--darkgray);
+  }
 
-h1 {
-  font-size: 70px;
-}
+  h1 {
+    @apply text-3xl;
+  }
 
-h2 {
-  font-size: 60px;
-}
+  h2 {
+    @apply text-2xl;
+  }
 
-h3 {
-  font-size: 46px;
-}
+  h3 {
+    @apply text-xl;
+  }
 
-h4 {
-  font-size: 30px;
-}
+  h4 {
+    @apply text-lg;
+  }
 
-h5 {
-  font-size: 24px;
-}
+  h5 {
+    @apply text-sm;
+  }
 
-h6,
-p {
-  font-size: 18px;
+  h6,
+  p {
+    @apply text-xs;
+  }
 }
 
 header {
@@ -62,7 +64,6 @@ header {
   padding: 0 1rem;
   float: left;
   margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
 }
 .home :link:not(:hover) {
   text-decoration: none;
@@ -112,11 +113,7 @@ header {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 
-    > h2 {
-      font-size: 3rem;
-    }
     > h3 {
-      font-size: 2rem;
       color: cornflowerblue;
     }
     > p {
@@ -325,6 +322,13 @@ footer {
 }
 
 .index {
+  /* > .hero {
+    > article {
+    display: flex;
+    flex-direction: column;
+    }
+  } */
+
   > .brief {
     > .grid {
       display: grid;
