@@ -1,0 +1,31 @@
+{
+  "highlights": {
+    "title": "亮点与特色",
+    "cards": [
+      {
+        "title": "广泛安全的设备接入",
+        "img": "/img/06_02_2014_manul_Pallass-cat_1.jpg"
+      },
+      {
+        "title": "设备全生命周期管理",
+        "img": "/img/06_02_2014_manul_Pallass-cat_1.jpg"
+      },
+      {
+        "title": "图像数据采集回传分析",
+        "img": "/img/06_02_2014_manul_Pallass-cat_1.jpg"
+      },
+      {
+        "title": "可视化远程运维协作",
+        "img": "/img/06_02_2014_manul_Pallass-cat_1.jpg"
+      },
+      {
+        "title": "局部安全防护",
+        "img": "/img/06_02_2014_manul_Pallass-cat_1.jpg"
+      },
+      {
+        "title": "纯私有化部署",
+        "img": "/img/06_02_2014_manul_Pallass-cat_1.jpg"
+      }
+    ]
+  }
+}

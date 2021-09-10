@@ -108,7 +108,7 @@ module.exports = function (eleventyConfig) {
   /* custom config */
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget("./css/");
-  eleventyConfig.addWatchTarget("**/*.[njk,md,liquid,html]");
+  eleventyConfig.addWatchTarget("**/*.[njk,md,liquid,html,json]");
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid

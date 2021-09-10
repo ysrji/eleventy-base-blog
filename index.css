@@ -326,12 +326,28 @@ footer {
 
 @layer components {
   .btn-more {
-    @apply border-current border-2 rounded-full px-2 py-1 text-sm text-gray-200;
+    @apply border-current border-2 rounded-full px-2 py-1 text-sm text-current;
   }
   .hero {
-    @apply flex flex-col items-center gap-8;
+    @apply flex flex-col items-center gap-8 py-8;
   }
   .card {
     @apply flex flex-col items-center gap-2;
+  }
+
+  .xdark {
+    @apply bg-black text-white;
+  }
+
+  .dark {
+    @apply bg-gray-900 text-gray-50;
+  }
+
+  .light {
+    @apply bg-gray-200 text-black;
+  }
+
+  .xlight {
+    @apply bg-white text-black;
   }
 }
