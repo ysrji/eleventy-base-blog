@@ -44,9 +44,12 @@
     @apply text-sm;
   }
 
-  h6,
-  p {
+  h6 {
     @apply text-xs;
+  }
+
+  p {
+    font-size: 0.6rem;
   }
 }
 
@@ -321,23 +324,14 @@ footer {
   }
 }
 
-.index {
-  /* > .hero {
-    > article {
-    display: flex;
-    flex-direction: column;
-    }
-  } */
-
-  > .brief {
-    > .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      > figure {
-        > img {
-          width: 100%;
-        }
-      }
-    }
+@layer components {
+  .btn-more {
+    @apply border-current border-2 rounded-full px-2 py-1 text-sm text-gray-200;
+  }
+  .hero {
+    @apply flex flex-col items-center gap-8;
+  }
+  .card {
+    @apply flex flex-col items-center gap-2;
   }
 }

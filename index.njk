@@ -2,40 +2,59 @@
 layout: layouts/base.njk
 templateClass: index
 ---
-<section class="hero p-48">
-  <article class="flex">
-    <h1>专业的数据私有化工业互联网平台提供商</h1>
-  <p>基于睿极智能自主研发的“睿极智造工业互联平台”，以工业互联网平台为核心，利用“5G+人工智能+大数据+物联网”技术， 通过多种网络设备，完成数据联网、接入和分析，实现各系统之间数据互通共享，
+<section class="hero py-24">
+  <h1 class="text-4xl max-w-2xl">专业的数据私有化工业互联网平台提供商</h1>
+  <p class="text-center max-w-xl text-gray-400 leading-relaxed">
+    基于睿极智能自主研发的“睿极智造工业互联平台”，以工业互联网平台为核心，利用“5G+人工智能+大数据+物联网”技术，<br>
+    通过多种网络设备，完成数据联网、接入和分析，实现各系统之间数据互通共享，<br>
     提供设备管理、状态感知、数据统计、智能分析、故障预测、报警推送、远程管理、智能运维、远程协助和局部安全防护等功能服务。</p>
-  <button>了解更多</button>
-  </article>
+  <button class="btn-more">了解更多</button>
 </section>
 <section class="carousel"></section>
-<section class="brief">
-  <h2>方案简介</h2>
-  <p>为满足用户生产制造信息化、工业化和智能化升级需求，睿极智能将提供专业的数据私有化工业互联网平台方案。 本方案基于睿极智能自主研发的“睿极智造工业互联平台”，以工业互联网平台为核心，利用“5G+人工智能+大数据+物联网”技术，
-    通过多种网络设备，完成数据联网、接入和分析，实现各系统之间数据互通共享， 提供设备管理、状态感知、数据统计、智能分析、故障预测、报警推送、远程管理、智能运维、远程协助和局部安全防护等功能服务。</p>
+<section class="hero py-6 bg-gray-200 text-black">
+  <h1>方案简介</h1>
+  <p class="text-center max-w-xl">为满足用户生产制造信息化、工业化和智能化升级需求，睿极智能将提供专业的数据私有化工业互联网平台方案。<br>
+    本方案基于睿极智能自主研发的“睿极智造工业互联平台”，以工业互联网平台为核心，利用“5G+人工智能+大数据+物联网”技术，<br>
+    通过多种网络设备，完成数据联网、接入和分析，实现各系统之间数据互通共享，<br>提供设备管理、状态感知、数据统计、智能分析、故障预测、报警推送、远程管理、智能运维、远程协助和局部安全防护等功能服务。</p>
   {% set features = collections.features %}
-  <div class="grid">
-    <figure>
+  <div class="flex mx-4 gap-2 justify-around">
+    <figure class="card">
       <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="5G">
       <figcaption>5G</figcaption>
     </figure>
-    <figure>
+    <figure class="card">
       <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="人工智能">
       <figcaption>人工智能</figcaption>
     </figure>
-    <figure>
+    <figure class="card">
       <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="大数据">
       <figcaption>大数据</figcaption>
     </figure>
-    <figure>
+    <figure class="card">
       <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="物联网">
       <figcaption>物联网</figcaption>
     </figure>
   </div>
 </section>
-<section class="highlights"></section>
+<section class="grid grid-flow-row grid-cols-3 gap-2 px-4 py-6">
+  <figure class="card">
+    <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="5G">
+    <figcaption>5G</figcaption>
+  </figure>
+  <figure class="card">
+    <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="人工智能">
+    <figcaption>人工智能</figcaption>
+  </figure>
+  <figure class="card">
+    <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="大数据">
+    <figcaption>大数据</figcaption>
+  </figure>
+  <figure class="card">
+    <img src="/img/06_02_2014_manul_Pallass-cat_1.jpg" alt="物联网">
+    <figcaption>物联网</figcaption>
+  </figure>
+
+</section>
 <section class="products"></section>
 <section class="about">
   <h3>睿极智能</h3>
