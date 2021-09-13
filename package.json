@@ -9,11 +9,11 @@
     "start": "npm run dev",
     "dev": "npm run clean && concurrently --kill-others \"npm:dev:styles\" \"npm:dev:11ty\"",
     "dev:styles": "TAILWIND_MODE=watch postcss index.css -o css/output.css --config ./postcss.config.js -w",
-    "dev:11ty": "ELEVENTY_ENV=development eleventy --serve --quiet --incremental",
+    "dev:11ty": "ELEVENTY_ENV=development eleventy --serve --incremental",
     "build": "npm run clean && npm run prod:styles && npm run prod:build",
     "prod:styles": "NODE_ENV=production postcss index.css -o css/output.css --config ./postcss.config.js",
     "prod:build": "ELEVENTY_ENV=production eleventy",
-    "debug": "DEBUG=Eleventy* eleventy",
+    "debug": "DEBUG=Eleventy* npm start",
     "dry-run": "DEBUG=Eleventy* eleventy --dryrun",
     "prepare": "husky install"
   },

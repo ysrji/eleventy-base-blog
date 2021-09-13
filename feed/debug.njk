@@ -13,8 +13,7 @@ permalink: "/debug.json"
     "name": "{{ metadata.author.name }}",
     "url": "{{ metadata.author.url }}"
   },
-  "items": 
+  "nav":
       {% set navPages = collections.all | eleventyNavigation %}
       {{ navPages | dump | safe }}
-  
 }
