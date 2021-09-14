@@ -72,27 +72,6 @@ header {
   text-decoration: none;
 }
 
-/* Nav */
-.nav {
-  padding: 0;
-  list-style: none;
-  /* float: left; */
-  /* margin-left: 1em; */
-
-  &-item {
-    display: inline-block;
-    margin-right: 1em;
-  }
-  &-item a[href]:not(:hover) {
-    text-decoration: none;
-    color: var(--white);
-  }
-  &-item-active {
-    text-decoration: underline;
-    color: var(--lightgray);
-  }
-}
-
 .solution {
   section {
     button {
@@ -349,5 +328,51 @@ footer {
 
   .xlight {
     @apply bg-white text-black;
+  }
+
+  /* Nav */
+  nav > ul,
+  ol,
+  menu {
+    & li {
+      transition-duration: 0.5s;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & ul {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        display: none;
+      }
+
+      &:hover > ul,
+      & ul:hover {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    /* padding: 0;
+    list-style: none;
+    display: block; */
+    /* float: left; */
+    /* margin-left: 1em; */
+
+    /* &-item {
+      display: inline-block;
+      margin-right: 1em;
+    }
+    &-item a[href]:not(:hover) {
+      text-decoration: none;
+      color: var(--white);
+    }
+    &-item-active {
+      text-decoration: underline;
+      color: var(--lightgray);
+    } */
   }
 }

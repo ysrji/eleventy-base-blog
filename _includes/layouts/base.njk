@@ -17,12 +17,16 @@
     <h1 class="home text-3xl"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
 
     {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-    <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-      <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %} text-3xl"><a
-          href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-    </ul>
+    <nav>
+      {% set navPages = collections.all | eleventyNavigation %}
+      {% set navPagesHtml = navPages | eleventyNavigationToHtml({
+        listElement: "ul",
+        listClass: "flex auto-cols-max justify-around",
+        listItemHasChildrenClass: "nav-folder",
+        activeListItemClass: "active-item"
+      }) %}
+      {{ navPagesHtml | safe }}
+    </nav>
   </header>
 
   <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
