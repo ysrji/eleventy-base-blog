@@ -17,7 +17,7 @@
     <h1><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
 
     {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-    <nav class="w-1/2">
+    <nav class="w-1/2 text-2xl">
       {% set navPages = collections.all | eleventyNavigation %}
       {% set navPagesHtml = navPages | eleventyNavigationToHtml({
         listElement: "ul",
@@ -35,7 +35,7 @@
     {{ content | safe }}
   </main>
 
-  <footer>
+  <footer class="py-8">
     <section>
       <div>
         <h2>睿极智造</h2>
@@ -46,7 +46,7 @@
       </div>
       <p>©2021 睿极智造工业互联网 皖ICP备15025143号</p>
     </section>
-    <section>
+    <section class="py-8">
       <div>
         <p>商务合作</p>
         <p>服务热线</p>
@@ -60,7 +60,7 @@
     </section>
     <section>
       <img src="/img/RJI_wechat_306_306.png"></img>
-      <div>
+      <div class="text-center">
         <h4>关注微信公众号</h4>
       </div>
     </section>
