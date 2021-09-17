@@ -63,14 +63,14 @@
   .hero-grid {
     @apply grid grid-cols-12 items-center justify-items-center;
     & > img {
-      @apply col-span-full row-span-full object-cover h-full;
+      @apply object-cover h-full;
     }
-    & ul {
+    & .feature-grid {
       @apply grid grid-cols-3 grid-rows-3 gap-y-2 gap-x-8 list-disc;
     }
   }
   .hero-article {
-    @apply row-span-full z-0 flex flex-col justify-center gap-y-8;
+    @apply z-0 flex flex-col justify-center gap-y-8;
   }
   .card {
     @apply flex flex-col items-center gap-2;
