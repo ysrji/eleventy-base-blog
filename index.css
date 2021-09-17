@@ -72,6 +72,12 @@
   .hero-article {
     @apply z-0 flex flex-col justify-center gap-y-8;
   }
+  .trend-article {
+    @apply row-span-2 col-span-4 p-8 flex flex-col gap-4 h-full rounded-lg bg-gray-900;
+    & em {
+      @apply text-blue-500 not-italic;
+    }
+  }
   .card {
     @apply flex flex-col items-center gap-2;
   }
@@ -132,18 +138,6 @@
             @apply flex-1;
           }
         }
-      }
-    }
-  }
-
-  .solution {
-    section {
-      button {
-        border: white solid 2px;
-        color: white;
-        height: 3em;
-        background-color: hsla(0, 0%, 0%, 0.5);
-        border-radius: 0.5em;
       }
     }
   }
@@ -215,39 +209,6 @@
     > div:nth-of-type(4) {
       grid-column: 5 / 7;
       grid-row: 3 / 4;
-    }
-  }
-
-  .trend {
-    display: grid;
-    gap: 5em;
-    grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: 2fr 3fr 3fr 1fr;
-    background-color: black;
-    color: white;
-
-    > div:nth-of-type(1) {
-      display: flex;
-      justify-content: space-around;
-      grid-column: 1 / 5;
-      grid-row: 1;
-    }
-
-    > div:nth-of-type(2) {
-      grid-row: 2 / 3;
-      grid-column: 2 / 3;
-    }
-    > div:nth-of-type(3) {
-      grid-row: 2 / 3;
-      grid-column: 3 / 4;
-    }
-    > div:nth-of-type(4) {
-      grid-row: 3 / 4;
-      grid-column: 2 / 3;
-    }
-    > div:nth-of-type(5) {
-      grid-row: 3 / 4;
-      grid-column: 3 / 4;
     }
   }
 
