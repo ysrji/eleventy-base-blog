@@ -104,28 +104,28 @@
 
     /* Nav */
     & > nav > ul {
-      align-items: baseline;
-
       & li {
-        transition-duration: 0.5s;
+        & > ul {
+          display: none;
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.5s ease;
+        }
+
+        &:hover ul,
+        & ul:hover {
+          display: inline-grid;
+          position: absolute;
+          visibility: visible;
+          opacity: 1;
+          margin: 1em -2em;
+        }
 
         &:hover {
           cursor: pointer;
         }
 
-        & > ul {
-          visibility: hidden;
-          opacity: 0;
-          transition: all 0.5s ease;
-          margin-top: 1rem;
-          display: none;
-        }
-
-        &:hover > ul,
-        & > ul:hover {
-          visibility: visible;
-          opacity: 1;
-        }
+        transition-duration: 0.5s;
       }
 
       & > li.nav-folder {
