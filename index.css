@@ -83,15 +83,15 @@
   }
 
   .xdark {
-    @apply bg-black text-white;
+    @apply bg-bgblack text-white;
   }
 
   .dark {
-    @apply bg-gray-900 text-gray-50;
+    @apply bg-bgdgray text-gray-50;
   }
 
   .light {
-    @apply bg-gray-200 text-black;
+    @apply bg-bglgray text-black;
   }
 
   .xlight {
@@ -99,7 +99,7 @@
   }
 
   header {
-    color: white;
+    @apply bg-bgdgray text-white;
     height: 80px;
 
     /* Nav */

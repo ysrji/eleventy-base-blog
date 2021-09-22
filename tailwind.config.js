@@ -4,6 +4,13 @@ module.exports = {
   darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        bgblack: "#181819",
+        bgdgray: "#343535",
+        bglgray: "#C3C7CB",
+        fggray: "#D3D2D3",
+        fgblue: "#1E91FE",
+      },
       backgroundImage: {
         b100: "url('/img/04-prod-hard/B100.png')",
         w101: "url('/img/04-prod-hard/W101.png')",
