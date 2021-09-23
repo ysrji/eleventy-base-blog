@@ -14,12 +14,12 @@ eleventyNavigation:
   <img class="col-start-1 col-span-9" src="/img/03-prod-soft-mgmt/control center.png"/>
 </section>
 <section class="hero h-full bg-gray-200">
-  <article class="hero-article my-24 gap-24 text-center text-black">
+  <article class="hero-article my-24 gap-24 mx-48 text-center text-black">
     <h1>主要功能</h1>
-    <ul class="grid grid-rows-2 grid-cols-4 gap-12 divide-black divide-opacity-25">
+    <ul class="flex flex-wrap justify-around">
       {%- for f in functionalities %}
-        <li class="flex flex-col items-center w-48">
-          <img class="w-24" src="{{f.img}}"/>
+        <li class="flex flex-col items-center gap-4 w-1/4 p-8">
+          <img class="w-2/3" src="{{f.img}}"/>
           <h4>{{f.title}}</h4>
           <p>{{f.description}}</p>
         </li>
